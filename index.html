@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jeb Universe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Navigation</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: lightgray;
+        }
+        .section {
+            margin-top: 100vh; /* Push section down for better navigation visibility */
+            padding: 20px;
+            background-color: black;
+           
+        }
+        h4 {
+        	color: white;
+        }
+        h2 {
+        	color: white;
+        }
+        h1 {
+        	color: white;
+        }
+        .title {
+        	background-color: orange;
+        }
+        h4 {
+        	line-height: 0.1;
+        }
+    </style>
 </head>
 <body>
+	<div class = "title">
+    	<h1>	-	</h1>
+    	<h1>Jeb Universe</h1>
+        <h1>	-	</h1>
+        
+    </div>
+    <button class="button" onclick="location.href='#section1'">Characters</button>
 
-<h1>Jeb</h1>
-<h4>[Description] a giant orange fish with a party hat. Jeb has a medical condition that makes him always stick out his tongue.</h4>
-<h4>[Powers] Flying, being able to pick up anything. (even without arms!)</h4>
-<a href="https://ibb.co/3mHwgVg5"><img src="https://i.ibb.co/GQjXzGzf/Jeb-Quiz.png" alt="Jeb-Quiz" border="0"></a>
-<h1>Notch</h1>
-<h4>[Description] a giant blue whale with a coyboy hat. Has the same medical condition as Jeb. </h4>
-<h4>[Powers] Hovering, picking up stuff (HE HAS ARMS!), and being able to crush things with weight</h4>
-<a href="https://ibb.co/VccGP1B6"><img src="https://i.ibb.co/bMMV80dt/Jeb-Quiz-1.png" alt="Jeb-Quiz-1" border="0"></a><br </a><br />
+    <div id="section1" class="section">
+        <h1>-Characters-</h1>
+        <h2>Jeb</h2>
+	<h4>[Description] a giant orange fish with a party hat. </h4>
+    <h4>Jeb has a medical condition that makes him stick out his tongue.</h4>
+	<h4>[Powers] Flying, being able to pick up anything. (even without arms!)</h4>
+	<a href="https://ibb.co/3q4nft9"><img src="https://i.ibb.co/HsBjNmf/Jeb-Quiz-3.png" alt="Jeb-Quiz-3" border="0"></a>
+			<h2>Notch</h2>
+	<h4>[Description] a giant blue whale with a cowboy hat. Has the same medical condition as Jeb. 		</h4>
+	<h4>[Powers] Hovering, picking up stuff (he has arms), and being able to crush things with weight.	</h4>
+        <a href="https://ibb.co/KcxfWPQf"><img src="https://i.ibb.co/mr524jY2/Untitled-design-3.png" 	alt="Untitled-design-3" border="0"></a>
+    </div>
+
 </body>
 </html>
