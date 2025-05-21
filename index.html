@@ -9,15 +9,16 @@
       scroll-behavior: smooth;
     }
     body {
-      font-family: Courier New, Monospace;
+      font-family: Courier New, Monospace,sans-serif;
       margin: 20px;
       text-align: center;
       color: white;
     }
+
     .button {
       padding: 10px 20px;
-      background-color: orange;
-      color: white;
+      background-color: white;
+      color: black;
       border: none;
       cursor: pointer;
       border-radius: 5px;
@@ -27,8 +28,8 @@
       background-color: lightgray;
     }
     .section {
-      margin-top: 100vh; /* Push section down for better navigation visibility */
-
+      margin-top: 2rem; /* Push section down for better navigation visibility */
+      background-color: black;
 
 
     img {
@@ -36,10 +37,7 @@
     }
     div {			background-color: black;
 
-      padding-top: 50px;
-      padding-left:20px;
-      padding-right:20px;
-      padding-bottom:50px;
+      padding: 50px 20px;
 
     }
     h4 {
@@ -77,6 +75,16 @@
       cursor: pointer;
       font-size: 16px;
     }
+    #large-image {
+      width: 550px;
+      height: auto;
+      image-rendering: crisp-edges;  /* Sharper images in modern browsers */
+      background-color: white;
+
+    }
+    .image {
+      background-color: white;
+    }
   </style>
 </head>
 <body>
@@ -85,13 +93,12 @@
 <button class="button" onclick="location.href='#section3'">Art Gallery</button>
 <button class="button" onclick="location.href='#section4'">Credits</button>
 <button class="button" onclick="location.href='#section5'">Links</button>
-<div id = "section0" class = "secton">
+<div id = "section0" class = "section title">
   <h1>	-	</h1>
   <h1>Jeb Universe</h1>
   <h1>	-	</h1>
-
 </div>
-<img src='https://i.postimg.cc/NGTfmkDB/Jeb-Quiz.jpg' border='0' alt='Jeb-Quiz'/>
+<img class = "image" src='https://i.postimg.cc/NGTfmkDB/Jeb-Quiz.jpg' border='0' alt='Jeb-Quiz'/>
 
 <button class="fixed-button" onclick="location.href='#section0'">Jump to Start</button>
 <div id="section1" class="section">
@@ -100,16 +107,23 @@
   <h4>[Description] a giant orange fish with a party hat. </h4>
   <h4>Jeb has a medical condition that makes him stick out his tongue.</h4>
   <h4>[Powers] Flying, being able to pick up anything. (even without arms!)</h4>
-  <img src='https://i.postimg.cc/HxCg0Z0X/Jeb-Quiz-3.png' border='0' alt='Jeb-Quiz-3'/></a>
+  <img class="image" src='https://i.postimg.cc/HxCg0Z0X/Jeb-Quiz-3.png' border='0' alt='Jeb-Quiz-3'/></a>
   <h2>Notch</h2>
   <h4>[Description] a giant blue whale with a cowboy hat.</h4>
   <h4>Has the same medical condition as Jeb.</h4>
   <h4>[Powers] Hovering, picking up stuff, and being able to crush things with weight.	</h4>
-  <img src='https://i.postimg.cc/P5RfDQFQ/Untitled-design-3.png' border='0' alt='Untitled-design-3'/></a>
+  <img class = "image" src='https://i.postimg.cc/P5RfDQFQ/Untitled-design-3.png' border='0' alt='Untitled-design-3'/></a>
   <h2>Kitty</h2>
   <h4>[Description] a giant cat.</h4>
   <h4>[Powers] ???</h4>
-  <img src='https://i.postimg.cc/N0qMVMGh/Untitled-design-4.png' border='0' alt='Untitled-design-4'/></a>
+  <img class = "image" src='https://i.postimg.cc/N0qMVMGh/Untitled-design-4.png' border='0' alt='Untitled-design-4'/></a>
+  <h2>Pickle Penguin</h2>
+  <h4>[Description] a giant penguin with a top hat.</h4>
+  <h4>[Powers] able to transform clothes any time</h4>
+  <img class = "image" id="large-image" src='https://i.postimg.cc/JHcYrJQx/Untitled-3125-x-4166-px-1.png' border='0' alt='Untitled-3125-x-4166-px-1'/>
+
+
+
 </div>
 <div id = "section2" class ="section">
   <h1>-Backstory-</h1>
@@ -120,19 +134,19 @@
     <h4>Thankfully, Notch came to the rescue. Of course, Notch cooked PP. But suddenly, a new</h4>
     <h4>enemy approached. His name? KITTY. Before he could do any damage, though, Notch just</h4>
     <h4>fell on him, and that was the end of that.</h4>
-    <h2>Wars and Alliences</h2>
+    <h2>Wars and Alliances</h2>
     <h3>Wars</h3>
     <h4>1. Jeb and Notch vs PP. Winner: Notch</h4>
     <h4>2. Jeb vs Notch. Winner: DRAW</h4>
-    <h4>Notch, Kitty, and PP vs Jeb. Winner: Notch allience + peace treaty.</h4>
-    <h3>Alliences</h3>
+    <h4>Notch, Kitty, and PP vs. Jeb. Winner: Notch alliance + peace treaty.</h4>
+    <h3>Alliances</h3>
     <h4>Current:</h4>
     <img src='https://i.postimg.cc/tJNKcGP3/Jeb.png' border='0' alt='Jeb'/></a>
 </div>
 <div id = "section3" class = "section">
   <h1>Art Gallery</h1>
   <img src='https://i.postimg.cc/SxXj9gcS/IMG-0492.jpg' border='0' alt='IMG-0492'/>
-  <p>Jeb.Suit MK 3. MK 3 has greater mobility, but has less armor, making it prone to attacks.</p>
+  <p>Jeb.Suit MK 3. MK 3 has greater mobility but has less armor, making it prone to attacks.</p>
   <img src='https://i.postimg.cc/HL7xvm4c/IMG-0494.jpg' border='0' alt='IMG-0494'/>
   <p>Intercontinental Ballistic Missile? Intercontinental Notch Missile! </p>
 </div>
@@ -143,5 +157,15 @@
   <h3>PP and Kitty: by Brian Hii</h3>
   <h3>Notch: by Patrick Lee</h3>
 </div>
+<div id = "section5" class = "section">
+  <h1>Links:</h1>
+  <a href ="https://i.postimg.cc/HxCg0Z0X/Jeb-Quiz-3.png" target="_blank">Jeb</a>
+  <a href="https://i.postimg.cc/P5RfDQFQ/Untitled-design-3.png" target="_blank">Notch</a>
+  <a href="https://i.postimg.cc/N0qMVMGh/Untitled-design-4.png" target="_blank">Kitty</a>
+
+
+
+</div>
+
 </body>
 </html>
