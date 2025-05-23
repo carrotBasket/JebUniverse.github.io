@@ -18,9 +18,9 @@
     .button {
       padding: 10px 20px;
       background-color: white;
-      color: black;
       border: none;
       cursor: pointer;
+      color: black;
       border-radius: 5px;
       font-size: 16px;
     }
@@ -29,7 +29,7 @@
     }
     .section {
       margin-top: 2rem; /* Push section down for better navigation visibility */
-      background-color: black;
+
 
 
     img {
@@ -41,10 +41,10 @@
 
     }
     h4 {
-      color: white;
+      color:orange;
     }
     h2 {
-      color: white;
+      color: orange;
     }
     h1 {
       color: white;
@@ -57,11 +57,11 @@
       text-align: left;
     }
     p {
-      color : white;
+      color : orange;
 
     }
-    div {
-      background-color: black;
+    a {
+      color: white;
     }
     .fixed-button {
       border-radius: 5px;
@@ -75,15 +75,29 @@
       cursor: pointer;
       font-size: 16px;
     }
-    #large-image {
-      width: 550px;
+
+    .image {
+      opacity: 0;
+      transform: translateX(200%);
+      transition: all 2s ease;
+      width: 500px;
       height: auto;
       image-rendering: crisp-edges;  /* Sharper images in modern browsers */
-      background-color: white;
+
+
+
 
     }
-    .image {
-      background-color: white;
+    .image.show {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+    #section0 {
+      color: white;
+    }
+    h3 {
+      color: orange;
     }
   </style>
 </head>
@@ -98,7 +112,7 @@
   <h1>Jeb Universe</h1>
   <h1>	-	</h1>
 </div>
-<img class = "image" src='https://i.postimg.cc/NGTfmkDB/Jeb-Quiz.jpg' border='0' alt='Jeb-Quiz'/>
+<img src='https://i.postimg.cc/NGTfmkDB/Jeb-Quiz.jpg' border='0' alt='Jeb-Quiz'/>
 
 <button class="fixed-button" onclick="location.href='#section0'">Jump to Start</button>
 <div id="section1" class="section">
@@ -107,20 +121,21 @@
   <h4>[Description] a giant orange fish with a party hat. </h4>
   <h4>Jeb has a medical condition that makes him stick out his tongue.</h4>
   <h4>[Powers] Flying, being able to pick up anything. (even without arms!)</h4>
-  <img class="image" src='https://i.postimg.cc/HxCg0Z0X/Jeb-Quiz-3.png' border='0' alt='Jeb-Quiz-3'/></a>
+  <img class = "image" src='https://i.postimg.cc/zyPQ2c15/Jeb-Quiz-600-x-600-px.png' border='0' alt='Jeb-Quiz-600-x-600-px'/>
   <h2>Notch</h2>
   <h4>[Description] a giant blue whale with a cowboy hat.</h4>
   <h4>Has the same medical condition as Jeb.</h4>
   <h4>[Powers] Hovering, picking up stuff, and being able to crush things with weight.	</h4>
-  <img class = "image" src='https://i.postimg.cc/P5RfDQFQ/Untitled-design-3.png' border='0' alt='Untitled-design-3'/></a>
+  <img class = "image" src='https://i.postimg.cc/5HVsrdkh/Jeb-Quiz-600-x-600-px-1.png' border='0' alt='Jeb-Quiz-600-x-600-px-1'/>
   <h2>Kitty</h2>
   <h4>[Description] a giant cat.</h4>
   <h4>[Powers] ???</h4>
-  <img class = "image" src='https://i.postimg.cc/N0qMVMGh/Untitled-design-4.png' border='0' alt='Untitled-design-4'/></a>
+  <img class = "image" src='https://i.postimg.cc/H8wGf49z/Untitled-600-x-600-px.png' border='0' alt='Untitled-600-x-600-px'/>
   <h2>Pickle Penguin</h2>
   <h4>[Description] a giant penguin with a top hat.</h4>
   <h4>[Powers] able to transform clothes any time</h4>
-  <img class = "image" id="large-image" src='https://i.postimg.cc/JHcYrJQx/Untitled-3125-x-4166-px-1.png' border='0' alt='Untitled-3125-x-4166-px-1'/>
+  <img class = "image" src='https://i.postimg.cc/JtzMFSfH/Jeb-Quiz-600-x-600-px-2.png' border='0' alt='Jeb-Quiz-600-x-600-px-2'/>
+
 
 
 
@@ -128,7 +143,8 @@
 <div id = "section2" class ="section">
   <h1>-Backstory-</h1>
   <h2>Beginning</h2>
-    <h4>There used to be only one character: JEB. At the time, Jeb was only just a fish with a</h4>>
+
+    <h4>There used to be only one character: JEB. At the time, Jeb was only just a fish with a</h4>
     <h4>party hat that had legs, but later, he evolved into something MUCH more...</h4>
     <h4>Then came Pickle Penguin. Pickle Penguin (PP) wanted to take over the world.</h4>
     <h4>Thankfully, Notch came to the rescue. Of course, Notch cooked PP. But suddenly, a new</h4>
@@ -152,20 +168,37 @@
 </div>
 <div id = "section4" class = "section">
   <h1>Credits:</h1>
-  <h3>Web Page by: Patrick Lee</h3>
-  <h3>Jeb: by Milo Stien</h3>
-  <h3>PP and Kitty: by Brian Hii</h3>
-  <h3>Notch: by Patrick Lee</h3>
+  <h3>Web Page by: Patrick</h3>
+  <h3>Jeb: by Milo</h3>
+  <h3>PP and Kitty: by Brian</h3>
+  <h3>Notch: by Patrick</h3>
 </div>
 <div id = "section5" class = "section">
   <h1>Links:</h1>
   <a href ="https://i.postimg.cc/HxCg0Z0X/Jeb-Quiz-3.png" target="_blank">Jeb</a>
   <a href="https://i.postimg.cc/P5RfDQFQ/Untitled-design-3.png" target="_blank">Notch</a>
   <a href="https://i.postimg.cc/N0qMVMGh/Untitled-design-4.png" target="_blank">Kitty</a>
+  <a href="https://i.postimg.cc/JHcYrJQx/Untitled-3125-x-4166-px-1.png" target="_blank">Pickle Penguin</a>
+
 
 
 
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.image');
 
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    images.forEach(image => observer.observe(image));
+  });
+
+</script>
 </body>
 </html>
