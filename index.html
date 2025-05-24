@@ -40,6 +40,10 @@
       padding: 50px 20px;
 
     }
+    #large-image {
+      width: 500px;
+      height: auto;
+    }
     h4 {
       color:orange;
     }
@@ -77,22 +81,18 @@
     }
 
     .image {
-      opacity: 0;
-      transform: translateX(200%);
-      transition: all 2s ease;
-      width: 500px;
-      height: auto;
-      image-rendering: crisp-edges;  /* Sharper images in modern browsers */
-
-
-
-
+        animation: slideFromRight 1s ease forwards;
     }
-    .image.show {
-      opacity: 1;
-      transform: translateX(0);
-
+    @keyframes slideFromRight {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);}
     }
+
     #section0 {
       color: white;
     }
@@ -126,7 +126,7 @@
   <h4>[Description] a giant blue whale with a cowboy hat.</h4>
   <h4>Has the same medical condition as Jeb.</h4>
   <h4>[Powers] Hovering, picking up stuff, and being able to crush things with weight.	</h4>
-  <img class = "image" src='https://i.postimg.cc/5HVsrdkh/Jeb-Quiz-600-x-600-px-1.png' border='0' alt='Jeb-Quiz-600-x-600-px-1'/>
+  <img class = "image"  src='https://i.postimg.cc/5HVsrdkh/Jeb-Quiz-600-x-600-px-1.png' border='0' alt='Jeb-Quiz-600-x-600-px-1'/>
   <h2>Kitty</h2>
   <h4>[Description] a giant cat.</h4>
   <h4>[Powers] ???</h4>
@@ -157,13 +157,13 @@
     <h4>Notch, Kitty, and PP vs. Jeb. Winner: Notch alliance + peace treaty.</h4>
     <h3>Alliances</h3>
     <h4>Current:</h4>
-    <img src='https://i.postimg.cc/tJNKcGP3/Jeb.png' border='0' alt='Jeb'/></a>
+    <img class="image" src='https://i.postimg.cc/tJNKcGP3/Jeb.png' border='0' alt='Jeb'/>
 </div>
 <div id = "section3" class = "section">
   <h1>Art Gallery</h1>
-  <img src='https://i.postimg.cc/SxXj9gcS/IMG-0492.jpg' border='0' alt='IMG-0492'/>
+  <img class = "image" src='https://i.postimg.cc/SxXj9gcS/IMG-0492.jpg' border='0' alt='IMG-0492'/>
   <p>Jeb.Suit MK 3. MK 3 has greater mobility but has less armor, making it prone to attacks.</p>
-  <img src='https://i.postimg.cc/HL7xvm4c/IMG-0494.jpg' border='0' alt='IMG-0494'/>
+  <img class = "image" src='https://i.postimg.cc/HL7xvm4c/IMG-0494.jpg' border='0' alt='IMG-0494'/>
   <p>Intercontinental Ballistic Missile? Intercontinental Notch Missile! </p>
 </div>
 <div id = "section4" class = "section">
@@ -185,19 +185,6 @@
 
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.image');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-
-    images.forEach(image => observer.observe(image));
-  });
 
 </script>
 </body>
