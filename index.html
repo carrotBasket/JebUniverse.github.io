@@ -81,16 +81,13 @@
     }
 
     .image {
-        animation: slideFromRight 1s ease forwards;
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1s ease-in-out;
     }
-    @keyframes slideFromRight {
-        from {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);}
+    .image.show {
+      opacity: 1;
+      transform: translateX(0);
     }
 
     #section0 {
@@ -185,6 +182,19 @@
 
 </div>
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.image');  // Changed from .pickle to .image
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    images.forEach(image => observer.observe(image));
+  });
 
 </script>
 </body>
